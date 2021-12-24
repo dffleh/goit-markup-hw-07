@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%);
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background-color: var(--background-origin);
@@ -54,7 +54,7 @@
   pointer-events: 0;
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -183,6 +183,6 @@
   color: var(--accent-color);
 }
 
-.modal-btn {
+.modal__btn {
   margin-top: 30px;
 }

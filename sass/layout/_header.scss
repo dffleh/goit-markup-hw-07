@@ -2,22 +2,19 @@
   border-bottom: 1px solid #eeeeee;
   background-color: var(--background-origin);
 }
-.header-list,
-.header-navigation {
+.site-nav__list,
+.site-nav,
+.contact {
   display: flex;
   align-items: center;
 }
 
-.header-list {
-  margin-left: auto;
+.site-nav__list {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 
-  .header-contact:not(:last-child) {
-    margin-right: 50px;
-  }
-  .header-item:not(:last-child) {
-    margin-right: 50px;
-  }
-  .current {
+  .site-nav__link--current {
     color: var(--accent-color);
 
     &::after {
@@ -25,7 +22,7 @@
 
       position: absolute;
       left: 0;
-      bottom: -9px;
+      bottom: -8px;
 
       display: block;
       width: 100%;
@@ -37,12 +34,21 @@
   }
 }
 
-.header-container {
+.contact__list {
+  margin-left: auto;
+
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header__container {
   display: flex;
 }
 
-.header-link {
+.site-nav__link {
   position: relative;
+  display: block;
 
   font-weight: 500;
   font-size: 14px;
@@ -51,7 +57,7 @@
   color: var(--second-title-color);
 }
 
-.header-logo {
+.site-nav__logo {
   margin-right: 93px;
 
   font-family: Raleway;
@@ -62,12 +68,12 @@
   color: var(--accent-color);
 }
 
-.studio {
+.site-nav__logo--black {
   color: var(--logo-text-color);
 }
 
-.header-mail,
-.header-tel {
+.contact__mail,
+.contact__tel {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -78,26 +84,26 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-logo,
-.header-link,
-.header-tel,
-.header-mail {
+.site-nav__logo,
+.site-nav__link,
+.contact__tel,
+.contact__mail {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.header-icon-mail,
-.header-icon-tel {
+.contact__mail--icon,
+.contact__tel--icon {
   transition: color 250ms var(--speed), background-color 250ms var(--speed);
 }
 
-.header-icon-mail {
+.contact__mail--icon {
   fill: currentColor;
   margin-right: 10px;
   width: 16px;
   height: 12px;
 }
-.header-icon-tel {
+.contact__tel--icon {
   fill: currentColor;
   margin-right: 10px;
   width: 10px;
