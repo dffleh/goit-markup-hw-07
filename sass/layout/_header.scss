@@ -22,7 +22,7 @@
 
       position: absolute;
       left: 0;
-      bottom: -8px;
+      bottom: -1px;
 
       display: block;
       width: 100%;
@@ -34,7 +34,7 @@
   }
 }
 
-.contact__list {
+.contact__header {
   margin-left: auto;
 
   .contact__item:not(:last-child) {
@@ -57,9 +57,7 @@
   color: var(--second-title-color);
 }
 
-.site-nav__logo {
-  margin-right: 93px;
-
+.logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -68,7 +66,11 @@
   color: var(--accent-color);
 }
 
-.site-nav__logo--black {
+.logo__header {
+  margin-right: 93px;
+}
+
+.logo__black {
   color: var(--logo-text-color);
 }
 

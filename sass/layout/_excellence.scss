@@ -1,7 +1,3 @@
-.excellence {
-  background-color: var(--background-origin);
-}
-
 .excellence-svg {
   display: flex;
   justify-content: center;
@@ -13,19 +9,20 @@
   background: #f5f4fa;
 }
 
-.excellence-svg-icon {
+.excellence-svg__icon {
   width: 70px;
   height: 70px;
 }
 
-.excellence-list {
+.excellence__list {
   display: flex;
-  .excellence-item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
-.excellence-text {
+.excellence__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.excellence__text {
   max-width: 270px;
 
   font-size: 14px;
@@ -34,7 +31,7 @@
   color: var(--main-text-color);
 }
 
-.excellence-head {
+.excellence__head {
   margin-bottom: 10px;
 
   font-weight: 700;

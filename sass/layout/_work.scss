@@ -3,11 +3,11 @@
   background-color: var(--background-origin);
 }
 
-.work-list {
+.work__list {
   display: flex;
 }
 
-.work-title {
+.work__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -17,7 +17,7 @@
   color: var(--second-title-color);
 }
 
-.work-item {
+.work__item {
   position: relative;
 
   &:not(:last-child) {
@@ -25,7 +25,7 @@
   }
 }
 
-.work-text {
+.work__text {
   display: flex;
   justify-content: center;
   align-items: center;
